@@ -8,6 +8,9 @@
   {{ block "head/seo" . }}{{ partial "head/seo.html" . }}{{ end }}
   {{ block "head/favicons" . }}{{ partial "head/favicons.html" . }}{{ end }}
   {{ range .Site.Params.custom_css -}}
-    <link rel="stylesheet" href="{{ . | absURL }}">
-{{- end }}
+  <link rel="stylesheet" href="{{ . | absURL }}">
+  {{- end }}
+  <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css">
+  <script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+  <script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
 </head>
