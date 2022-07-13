@@ -11,3 +11,5 @@
     <link rel="stylesheet" href="{{ . | absURL }}">
 {{- end }}
 </head>
+  {{ block "head/custom-head" . }}{{ partial "head/custom-head.html" . }}{{ end }}
+</head>
