@@ -4,10 +4,11 @@ This script allows the user to put everything into a md-file for hugo
 Requires JSON file from prior run of build_json.py 
 
 input:  (1) index = xxx
+        (2) lang = {en,de} (optional)
 
 output: xxx.md
 
-usage: python3 make_md.py xxx
+usage: python3 make_md.py xxx [lang]
 """
 
 import json
@@ -15,6 +16,11 @@ import sys
 import re
 
 index = str(sys.argv[1])
+if len(sys.argv) > 2:
+    lang = sys.argv[2]
+else:
+    lang = 'en'
+
 path = f"{index}/{index}"
 
 with open(f"{path}.json", 'r') as input:
@@ -62,7 +68,10 @@ chapter = f"chapter{index[0]}"
 
 ## WeBWorK
 if webworklink != "":
-    webworkstring = '## Solve the WeBWorK exercise\n {{< webwork "' + f"{webworklink}" + '">}}'
+    if lang == 'de':
+        webworkstring = '## Löse die WeBWorK Aufgabe\n {{< webwork "' + f"{webworklink}" + '">}}'
+    else:
+        webworkstring = '## Solve the WeBWorK exercise\n {{< webwork "' + f"{webworklink}" + '">}}'
 else:
     webworkstring = ""
 
@@ -80,7 +89,10 @@ if video != "":
     video = '{{< tab tabName="Video">}}\n'+  video +  '\n{{< /tab >}}\n'
 elif youtubelink != "":
     ntabs = ntabs + 1
-    video = '{{< tab tabName="Video">}}\n' + f'Click [here](https://youtu.be/{youtubeid}) or on the thumbnail below to open up the YouTube video in a separate tab!  <a href="https://youtu.be/{youtubeid}?{youtubetime}" target="_blank"> <img src="./{youtubeid}.jpg"></a>' + '\n{{< /tab >}}\n'
+    if lang == 'de':
+        video = '{{< tab tabName="Video">}}\n' + f'Klicke [hier](https://youtu.be/{youtubeid}) oder auf den Thumbnail unten um das YouTube Video in einem separaten Tab zu öffnen!  <a href="https://youtu.be/{youtubeid}?{youtubetime}" target="_blank"> <img src="./{youtubeid}.jpg"></a>' + '\n{{< /tab >}}\n'
+    else:
+        video = '{{< tab tabName="Video">}}\n' + f'Click [here](https://youtu.be/{youtubeid}) or on the thumbnail below to open up the YouTube video in a separate tab!  <a href="https://youtu.be/{youtubeid}?{youtubetime}" target="_blank"> <img src="./{youtubeid}.jpg"></a>' + '\n{{< /tab >}}\n'
 
 # preprocess podcast
 if podcast != "":
