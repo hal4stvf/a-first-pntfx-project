@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JPG and FNAG on </title>
+    <link>/a-first-pntfx-project//contributors/jpg-and-fnag/</link>
+    <description>Recent content in JPG and FNAG on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 04 Nov 2022 09:19:42 +0100</lastBuildDate><atom:link href="/a-first-pntfx-project//contributors/jpg-and-fnag/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bridge2mint - a project built using pntfx</title>
+      <link>/a-first-pntfx-project//news/bridge2mint/</link>
+      <pubDate>Fri, 04 Nov 2022 09:19:42 +0100</pubDate>
+      
+      <guid>/a-first-pntfx-project//news/bridge2mint/</guid>
+      <description>We are happy to share another project built with pntfx: bridge2mint.
+This project by the Institute of Mathematics  at TU Hamburg  features a &amp;ldquo;knowledge network of fundamental mathematical concepts for a successful start in MINT studies&amp;rdquo;. Available in English and German.
+Visit www3.tuhh.de/e-10/bridge2mint/  for more information and check out the GitLab repositories  .</description>
+    </item>
+    
+    <item>
+      <title>doks showcase is featuring pntfx</title>
+      <link>/a-first-pntfx-project//news/doksshowcase/</link>
+      <pubDate>Fri, 04 Nov 2022 09:19:42 +0100</pubDate>
+      
+      <guid>/a-first-pntfx-project//news/doksshowcase/</guid>
+      <description>We are proud to be featured in the Doks Showcase  . So far, we are the only Doks project using the Cytocoscape.js  powered graph navigation functionality  .</description>
+    </item>
+    
+    <item>
+      <title>Pntfx did it - Say hello to Doks 👋</title>
+      <link>/a-first-pntfx-project//news/say-hello-to-doks/</link>
+      <pubDate>Wed, 04 Nov 2020 09:19:42 +0100</pubDate>
+      
+      <guid>/a-first-pntfx-project//news/say-hello-to-doks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pntfx is a HOOU project at TUHH</title>
+      <link>/a-first-pntfx-project//news/aboutpntfx/</link>
+      <pubDate>Wed, 04 Nov 2020 09:19:42 +0100</pubDate>
+      
+      <guid>/a-first-pntfx-project//news/aboutpntfx/</guid>
+      <description>Developed by Fabian Gabel  and Julian Großmann  . Using content created for WeBWorK  and the Well-defined and Wonderful podcast  by Marcus Waurick.
+Created with the HUGO  theme Doks  .
+Built with Pandoc  , Python  , Docker  , and GitLab CI/CD  .</description>
+    </item>
+    
+  </channel>
+</rss>
