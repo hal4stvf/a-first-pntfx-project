@@ -52,7 +52,7 @@
 
 [[footer]]
   name = "Privacy"
-  url = "/privacy-policy/"
+  url = "./privacy-policy/"
   weight = 10
 
 [[footer]]

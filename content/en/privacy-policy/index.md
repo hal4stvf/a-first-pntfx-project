@@ -18,4 +18,9 @@ __TLDR__: We do not use cookies and we do not collect any personal data.
 - No information is mined and harvested for personal and behavioral trends.
 - No information is monetized.
 
-Effective Date: _14th July 2022_
+## 
+<div id="matomo-opt-out"></div>
+<script src="https://github2.matomo.cloud/index.php?module=CoreAdminHome&action=optOutJS&divId=matomo-opt-out&language=auto&showIntro=1"></script>
+
+
+Effective Date: _14th March 2024_
