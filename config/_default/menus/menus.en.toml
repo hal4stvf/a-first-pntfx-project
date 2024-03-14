@@ -1,18 +1,18 @@
 [[main]]
   name = "Network"
-  url = "/docs/level1/"
+  url = "./docs/level1/"
   weight = 10
 
 [[main]]
   name = "News"
-  url = "/news/"
+  url = "./news/"
   weight = 20
 
 [[main]]
   name = "Information"
   weight = 30
   identifier = "get-started"
-  url = "/docs/chapter0/"
+  url = "./docs/chapter0/"
 
 [[main]]
   name = "Hamburg Open Online University"
@@ -26,7 +26,7 @@
   name = "About pntfx"
   weight = 60
   identifier = "aboutpntfx"
-  url = "/news/aboutpntfx/"
+  url = "./news/aboutpntfx/"
   parent = "get-started"
 
 [[social]]
@@ -47,7 +47,7 @@
 
 [[footer]]
   name = "Feedback"
-  url = "/feedback/"
+  url = "./feedback/"
   weight = 10
 
 [[footer]]
@@ -57,5 +57,5 @@
 
 [[footer]]
   name = "Impressum"
-  url = "/impressum/"
+  url = "./impressum/"
   weight = 10

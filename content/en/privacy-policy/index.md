@@ -18,9 +18,42 @@ __TLDR__: We do not use cookies and we do not collect any personal data.
 - No information is mined and harvested for personal and behavioral trends.
 - No information is monetized.
 
-## 
-<div id="matomo-opt-out"></div>
-<script src="https://github2.matomo.cloud/index.php?module=CoreAdminHome&action=optOutJS&divId=matomo-opt-out&language=auto&showIntro=1"></script>
+##  Matomo
 
+Diese Website nutzt Matomo aus rein didaktisch-wissenschaftlichen Gründen.
+
+<div id="optout-form">
+  <p>You may choose not to have a unique web analytics cookie identification number assigned to your computer to avoid the aggregation and analysis of data collected on this website.</p>
+  <p>To make that choice, please click below to receive an opt-out cookie.</p>
+
+  <p>
+    <input type="checkbox" id="optout" />
+    <label for="optout"><strong></strong></label>
+  </p>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+  function setOptOutText(element) {
+    _paq.push([function() {
+      element.checked = !this.isUserOptedOut();
+      document.querySelector('label[for=optout] strong').innerText = this.isUserOptedOut()
+        ? 'You are currently opted out. Click here to opt in.'
+        : 'You are currently opted in. Click here to opt out.';
+    }]);
+  }
+
+  var optOut = document.getElementById("optout");
+  optOut.addEventListener("click", function() {
+    if (this.checked) {
+      _paq.push(['forgetUserOptOut']);
+    } else {
+      _paq.push(['optUserOut']);
+    }
+    setOptOutText(optOut);
+  });
+  setOptOutText(optOut);
+});
+</script>
+      
 
 Effective Date: _14th March 2024_
