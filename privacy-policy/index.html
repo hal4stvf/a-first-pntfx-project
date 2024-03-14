@@ -168,12 +168,12 @@
         <h3 class="h6 text-uppercase mb-3 d-md-none">Main</h3>
         <ul class="nav flex-column flex-md-row ms-md-n3">
               <li class="nav-item">
-                <a class="nav-link ps-0 py-1" href="/a-first-pntfx-project/a-first-pntfx-project/docs/level1/">Network</a>
+                <a class="nav-link ps-0 py-1" href="/a-first-pntfx-project/docs/level1/">Network</a>
               </li>
             
           
               <li class="nav-item">
-                <a class="nav-link ps-0 py-1" href="/a-first-pntfx-project/a-first-pntfx-project/news/">News</a>
+                <a class="nav-link ps-0 py-1" href="/a-first-pntfx-project/news/">News</a>
               </li>
             
           
@@ -187,7 +187,7 @@
                       <a class="dropdown-item" href="https://hoou.de">Hamburg Open Online University</a>
                     </li>
                   <li>
-                      <a class="dropdown-item" href="/a-first-pntfx-project/a-first-pntfx-project/news/aboutpntfx/">About pntfx</a>
+                      <a class="dropdown-item" href="/a-first-pntfx-project/news/aboutpntfx/">About pntfx</a>
                     </li>
                   </ul>
               </li>
@@ -226,9 +226,38 @@
 <li>No information is mined and harvested for personal and behavioral trends.</li>
 <li>No information is monetized.</li>
 </ul>
-<h2 id="heading"> <a href="#heading" class="anchor" aria-hidden="true">#</a></h2>
-<div id="matomo-opt-out"></div>
-<script src="https://github2.matomo.cloud/index.php?module=CoreAdminHome&action=optOutJS&divId=matomo-opt-out&language=auto&showIntro=1"></script>
+<h2 id="matomo">Matomo <a href="#matomo" class="anchor" aria-hidden="true">#</a></h2>
+<p>Diese Website nutzt Matomo aus rein didaktisch-wissenschaftlichen Gründen.</p>
+<div id="optout-form">
+  <p>You may choose not to have a unique web analytics cookie identification number assigned to your computer to avoid the aggregation and analysis of data collected on this website.</p>
+  <p>To make that choice, please click below to receive an opt-out cookie.</p>
+  <p>
+    <input type="checkbox" id="optout" />
+    <label for="optout"><strong></strong></label>
+  </p>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+  function setOptOutText(element) {
+    _paq.push([function() {
+      element.checked = !this.isUserOptedOut();
+      document.querySelector('label[for=optout] strong').innerText = this.isUserOptedOut()
+        ? 'You are currently opted out. Click here to opt in.'
+        : 'You are currently opted in. Click here to opt out.';
+    }]);
+  }
+<p>var optOut = document.getElementById(&ldquo;optout&rdquo;);
+optOut.addEventListener(&ldquo;click&rdquo;, function() {
+if (this.checked) {
+_paq.push([&lsquo;forgetUserOptOut&rsquo;]);
+} else {
+_paq.push([&lsquo;optUserOut&rsquo;]);
+}
+setOptOutText(optOut);
+});
+setOptOutText(optOut);
+});
+</script></p>
 <p>Effective Date: <em>14th March 2024</em></p>
 
     </article>
@@ -249,8 +278,8 @@
       </div>
       <div class="col-lg-8 order-first order-lg-last text-lg-end">
         <ul class="list-inline">
-          <li class="list-inline-item"><a href="/a-first-pntfx-project/a-first-pntfx-project/feedback/">Feedback</a></li>
-          <li class="list-inline-item"><a href="/a-first-pntfx-project/a-first-pntfx-project/impressum/">Impressum</a></li>
+          <li class="list-inline-item"><a href="/a-first-pntfx-project/feedback/">Feedback</a></li>
+          <li class="list-inline-item"><a href="/a-first-pntfx-project/impressum/">Impressum</a></li>
           <li class="list-inline-item"><a href="/a-first-pntfx-project/privacy-policy/">Privacy</a></li>
           </ul>
       </div>
